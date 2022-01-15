@@ -39,26 +39,11 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-resilience4j:
-  circuitbreaker:
-    instances:
-      personaCB:
-        registerHealthIndicator: true
-        slidingWindowSize: 10
-        permittedNumberOfCallsInHalfOpenState: 3
-        slidingWindowType: TIME_BASED
-        minimumNumberOfCalls: 4
-        waitDurationInOpenState: 50s
-        failureRateThreshold: 50
-        eventConsumerBufferSize: 10
+feign:
+  hystrix:
+    enabled: true
 management:
-  health:
-    circuitbreakers:
-      enabled: true
   endpoints:
     web:
       exposure:
-        include: health
-  endpoint:
-    health:
-      show-details: always
+        include: "*"
