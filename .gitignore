@@ -3,6 +3,7 @@
 # files
 
 /config-service
+/registry-service
 /service-persona
 /service-solicitud
 /service-solicitud.zip
