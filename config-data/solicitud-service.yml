@@ -61,4 +61,4 @@ management:
         include: health
   endpoint:
     health:
-      show-details: alwais
+      show-details: always
