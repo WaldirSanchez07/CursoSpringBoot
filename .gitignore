@@ -4,6 +4,6 @@
 
 /config-service
 /registry-service
+/gateway-service
 /service-persona
 /service-solicitud
-/service-solicitud.zip
