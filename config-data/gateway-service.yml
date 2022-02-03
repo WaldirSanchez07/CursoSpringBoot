@@ -22,10 +22,10 @@ spring:
           enabled: true
       routes:
         - id: persona-service
-          uri: https://6e46-190-233-177-6.ngrok.io/
+          uri: lb://persona-service
           predicates:
             - Path=/persona/**
         - id: solicitud-service
-          uri: https://b9f5-190-233-177-6.ngrok.io/
+          uri: lb://solicitud-service
           predicates:
             - Path=/solicitud/**
