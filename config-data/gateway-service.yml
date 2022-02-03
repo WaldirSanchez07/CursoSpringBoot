@@ -26,6 +26,6 @@ spring:
           predicates:
             - Path=/persona/**
         - id: solicitud-service
-          uri: lb://solicitud-service
+          uri: https://1874-190-232-157-190.ngrok.io/
           predicates:
             - Path=/solicitud/**
